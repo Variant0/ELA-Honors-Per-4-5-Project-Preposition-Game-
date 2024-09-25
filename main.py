@@ -226,14 +226,14 @@ while lp3:
     draw_rect_skeleton((50, 650), (50, 400), (100, 400), (100, 650), (0, 0, 0), 2)
 
     # Displaying Questions & Possible Answers for player 1
-    display_text(question_p1.get_arg_question(), 267, 65, 20, "Arial")
+    display_text(question_p1.get_arg_question(), 267, 65, 15, "Arial")
     display_text(question_p1.get_arg_ans(), lc1[0], lc1[1], 25)
     display_text(wr_an1, lc2[0], lc2[1], 25)
     display_text(wr_an2, lc3[0], lc3[1], 25)
     display_text(wr_an3, lc4[0], lc4[1], 25)
 
     # Displaying Questions & Possible Answers for player 2
-    display_text(question_p2.get_arg_question(), 267, 415, 20, "Arial")
+    display_text(question_p2.get_arg_question(), 267, 415, 15, "Arial")
     display_text(question_p2.get_arg_ans(), lc1b[0], lc1b[1], 25)
     display_text(wr_an1b, lc2b[0], lc2b[1], 25)
     display_text(wr_an2b, lc3b[0], lc3b[1], 25)
