@@ -40,19 +40,19 @@ q15: Question = Question("Which is a compound preposition?", "because of", ("run
 q16: Question = Question("A prepositional phrase begins with a preposition.", "True", ("False", "", ""))
 q17: Question = Question("A prepositional phrase can have modifiers.", "True", ("False", "", ""))
 q18: Question = Question("A prepositional can be an action word.", "False", ("True", "", ""))
-q19: Question = Question("A compound prepositon has 1+ words in it.", "True", ("False", "", ""))
+q19: Question = Question("A compound prepositon has 2 or more words in it.", "True", ("False", "", ""))
 q20: Question = Question("A preposition connects two nouns or pronouns.", "True", ("False", "", ""))
 
 q21: Question = Question("A prepositional phrase starts/ends with a preposition.", "True", ("False", "", ""))
 q22: Question = Question("A prepositional phrase must have an object.", "True", ("False", "", ""))
-q23: Question = Question("Which of the following is a preposition?", "Beside", ("Rarely", "kind", "lively"))
+q23: Question = Question("Which of the following is a preposition?", "beside", ("rarely", "kind", "lively"))
 q24: Question = Question("Which is a compound preposition", "instead of", ("eventually", "sometimes go", "book cases"))
-q25: Question = Question("A prepositional phrase has to be 3 words", "", ("", "", ""))
-q26: Question = Question("", "", ("", "", ""))
-q27: Question = Question("", "", ("", "", ""))
-q28: Question = Question("", "", ("", "", ""))
-q29: Question = Question("", "", ("", "", ""))
-q30: Question = Question("", "", ("", "", ""))
+q25: Question = Question("A prepositional phrase has to be 3 words", "False", ("True", "", ""))
+q26: Question = Question("The bird is ______ the cage.", "within", ("true", "real", "wide"))
+q27: Question = Question("Which is a compound preposition?", "because of", ("around", "under the", "about ten"))
+q28: Question = Question("Which is a preposition?", "beneath", ("the", "thoughtless", "tiny"))
+q29: Question = Question("Which is a modifier?", "the", ("run", "walk", "talk"))
+q30: Question = Question("Which is a modifier?", "a", ("sprint", "kick", "enjoy"))
 
 question_list: List[Question] = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19,
                                  q20, q21, q22, q23, q24, q25, q26, q27, q28, q29, q30]
