@@ -39,7 +39,7 @@ q14: Question = Question("Which is a compound preposition?", "as of", ("beside",
 q15: Question = Question("Which is a compound preposition?", "because of", ("run", "twenty lamps", "defeated"))
 q16: Question = Question("A prepositional phrase begins with a preposition.", "True", ("False", "", ""))
 q17: Question = Question("A prepositional phrase can have modifiers.", "True", ("False", "", ""))
-q18: Question = Question("A prepositional can be an action word.", "False", ("True", "", ""))
+q18: Question = Question("A prepositional phrase can have an action word.", "False", ("True", "", ""))
 q19: Question = Question("A compound prepositon has 2 or more words in it.", "True", ("False", "", ""))
 q20: Question = Question("A preposition connects two nouns or pronouns.", "True", ("False", "", ""))
 
