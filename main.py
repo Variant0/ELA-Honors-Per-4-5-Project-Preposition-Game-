@@ -74,6 +74,23 @@ wr_an1b, wr_an2b, wr_an3b = question_p2.get_arg_wr_ans()
 
 while lp0:
     screen.fill((255, 255, 255))
+    pygame.draw.rect(screen, (255, 0, 0), [0, 0, 500, 350])
+    pygame.draw.rect(screen, (0, 0, 255), [0, 350, 500, 350])
+    pygame.draw.polygon(screen, (255, 0, 0), ((0, 350), (500, 350), (500, 400)))
+
+    # Ellipses in red portion
+
+    pygame.draw.ellipse(screen, (0, 0, 0), (50, 50, 25, 25), width=0)
+    pygame.draw.ellipse(screen, (0, 0, 0), (200, 200, 25, 25), width=0)
+    pygame.draw.ellipse(screen, (0, 0, 0), (400, 80, 25, 25), width=0)
+    pygame.draw.ellipse(screen, (0, 0, 0), (450, 330, 25, 25), width=0)
+
+    # Ellipses in blue portion
+
+    pygame.draw.ellipse(screen, (255, 255, 255), (50, 470, 25, 25), width=0)
+    pygame.draw.ellipse(screen, (255, 255, 255), (200, 650, 25, 25), width=0)
+    pygame.draw.ellipse(screen, (255, 255, 255), (400, 420, 25, 25), width=0)
+    pygame.draw.ellipse(screen, (255, 255, 255), (430, 590, 25, 25), width=0)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -85,7 +102,7 @@ while lp0:
                 lp0 = False
 
     display_text("Welcome to ", 250, 100, 30)
-    display_text("VERBAL VERSUS", 250, 300, 70, "Arial")
+    display_text("VERBAL VERSUS", 250, 300, 60, "Courier")
     display_text("Press enter to begin", 250, 500, 20)
 
     pygame.display.flip()
@@ -95,6 +112,14 @@ screen.fill((255, 255, 255))
 while lp1:
 
     # ------------------------------------- INPUT PHASE -----------------------------------------
+    screen.fill((255, 255, 255))
+    for x in range(30):
+        for i in range(16):
+            if x % 2 == 0:
+                pygame.draw.rect(screen, (128, 128, 128), [35 * i if i % 2 == 0 else 0, 35 * x, 35, 35])
+            else:
+                pygame.draw.rect(screen, (128, 128, 128), [35 * i + 35 if i % 2 == 0 else 0,
+                                                           35 * x if i % 2 == 0 else 0, 35, 35])
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -141,11 +166,6 @@ while lp1:
                     else:
                         p2name += event.unicode
 
-    # Function to display text on the screen
-
-    # Clear screen
-    screen.fill((255, 255, 255))
-
     # Display instructions for input
     if input_active == 0:
         display_text("Enter the first player's name:", 250, 50, 30)
@@ -165,6 +185,13 @@ while lp1:
 while lp2:
     # ----------------------------------- HOW TO PLAY (in game explanation) ------------------------------------
     screen.fill((255, 255, 255))
+    for x in range(30):
+        for i in range(16):
+            if x % 2 == 0:
+                pygame.draw.rect(screen, (128, 128, 128), [35 * i if i % 2 == 0 else 0, 35 * x, 35, 35])
+            else:
+                pygame.draw.rect(screen, (128, 128, 128), [35 * i + 35 if i % 2 == 0 else 0,
+                                                           35 * x if i % 2 == 0 else 0, 35, 35])
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             lp2 = False
@@ -378,8 +405,10 @@ while lp4:
             exit(0)
 
     if p1score >= 15:
+        screen.fill((255, 0, 0))
         display_text(f"{p1name} wins!", 200, 200, 100, "Arial")
     else:
+        screen.fill((0, 0, 255))
         display_text(f"{p2name} wins!", 200, 200, 100, "Arial")
 
     pygame.display.flip()
