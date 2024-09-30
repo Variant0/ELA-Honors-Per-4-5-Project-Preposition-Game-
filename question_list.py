@@ -41,7 +41,7 @@ q16: Question = Question("A prepositional phrase begins with a preposition.", "T
 q17: Question = Question("A prepositional phrase can have modifiers.", "True", ("False", "", ""))
 q18: Question = Question("A prepositional phrase can have an action word.", "False", ("True", "", ""))
 q19: Question = Question("A compound prepositon has 2 or more words in it.", "True", ("False", "", ""))
-q20: Question = Question("A preposition connects two nouns or pronouns.", "True", ("False", "", ""))
+q20: Question = Question("A preposition connects two nouns or pronouns.", "False", ("True", "", ""))
 
 q21: Question = Question("A prepositional phrase starts/ends with a preposition.", "True", ("False", "", ""))
 q22: Question = Question("A prepositional phrase must have an object.", "True", ("False", "", ""))
