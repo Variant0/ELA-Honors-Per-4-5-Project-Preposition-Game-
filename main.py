@@ -76,7 +76,7 @@ while lp0:
     screen.fill((255, 255, 255))
     pygame.draw.rect(screen, (255, 122, 50), [0, 0, 500, 350])
     pygame.draw.rect(screen, (0, 0, 255), [0, 350, 500, 350])
-    pygame.draw.polygon(screen, (255, 0, 0), ((0, 350), (500, 350), (500, 400)))
+    pygame.draw.polygon(screen, (255, 122, 50), ((0, 350), (500, 350), (500, 400)))
 
     # Ellipses in red portion
 
@@ -113,13 +113,9 @@ while lp1:
 
     # ------------------------------------- INPUT PHASE -----------------------------------------
     screen.fill((255, 255, 255))
-    for x in range(30):
-        for i in range(16):
-            if x % 2 == 0:
-                pygame.draw.rect(screen, (128, 128, 128), [35 * i if i % 2 == 0 else 0, 35 * x, 35, 35])
-            else:
-                pygame.draw.rect(screen, (128, 128, 128), [35 * i + 35 if i % 2 == 0 else 0,
-                                                           35 * x if i % 2 == 0 else 0, 35, 35])
+    pygame.draw.rect(screen, (255, 122, 50), [0, 0, 500, 350])
+    pygame.draw.rect(screen, (0, 0, 255), [0, 350, 500, 350])
+    pygame.draw.polygon(screen, (255, 122, 50), ((0, 350), (500, 350), (500, 400)))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -185,13 +181,10 @@ while lp1:
 while lp2:
     # ----------------------------------- HOW TO PLAY (in game explanation) ------------------------------------
     screen.fill((255, 255, 255))
-    for x in range(30):
-        for i in range(16):
-            if x % 2 == 0:
-                pygame.draw.rect(screen, (128, 128, 128), [35 * i if i % 2 == 0 else 0, 35 * x, 35, 35])
-            else:
-                pygame.draw.rect(screen, (128, 128, 128), [35 * i + 35 if i % 2 == 0 else 0,
-                                                           35 * x if i % 2 == 0 else 0, 35, 35])
+    pygame.draw.rect(screen, (255, 122, 50), [0, 0, 500, 350])
+    pygame.draw.rect(screen, (0, 0, 255), [0, 350, 500, 350])
+    pygame.draw.polygon(screen, (255, 122, 50), ((0, 350), (500, 350), (500, 400)))
+    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             lp2 = False
