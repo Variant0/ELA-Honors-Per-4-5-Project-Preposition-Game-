@@ -74,7 +74,7 @@ wr_an1b, wr_an2b, wr_an3b = question_p2.get_arg_wr_ans()
 
 while lp0:
     screen.fill((255, 255, 255))
-    pygame.draw.rect(screen, (255, 0, 0), [0, 0, 500, 350])
+    pygame.draw.rect(screen, (255, 122, 50), [0, 0, 500, 350])
     pygame.draw.rect(screen, (0, 0, 255), [0, 350, 500, 350])
     pygame.draw.polygon(screen, (255, 0, 0), ((0, 350), (500, 350), (500, 400)))
 
