@@ -398,7 +398,7 @@ while lp4:
             exit(0)
 
     if p1score >= 15:
-        screen.fill((255, 0, 0))
+        screen.fill((255, 122, 50))
         display_text(f"{p1name} wins!", 200, 200, 50, "Arial")
     else:
         screen.fill((0, 0, 255))
