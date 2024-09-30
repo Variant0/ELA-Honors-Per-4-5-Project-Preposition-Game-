@@ -406,10 +406,10 @@ while lp4:
 
     if p1score >= 15:
         screen.fill((255, 0, 0))
-        display_text(f"{p1name} wins!", 200, 200, 100, "Arial")
+        display_text(f"{p1name} wins!", 200, 200, 50, "Arial")
     else:
         screen.fill((0, 0, 255))
-        display_text(f"{p2name} wins!", 200, 200, 100, "Arial")
+        display_text(f"{p2name} wins!", 200, 200, 50, "Arial")
 
     pygame.display.flip()
 
